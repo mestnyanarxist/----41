@@ -16,4 +16,9 @@ git add -A
 git commit -m "ваше сообщение" 
 Отправка изменений в Git:
 git push origin название-текущей-ветки 
+Для слияния веток нужно прописать в терминале: 
+git checkout main ; 
+git pull ; 
+git merge <название> 
+Чтобы в Git применились изменения тоже, нужно закомитить.
 To be continued...
