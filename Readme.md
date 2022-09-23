@@ -23,7 +23,7 @@ app.get("/", (req, res) => {
 ```
 5) В терминале прописана команда:
 nodeserver/index.js
-6) В браузере вызван URL: https://localhost:3000
+6) В браузере вызван URL: http://localhost:3000
 7) В файл package.json добавлен скрипт, чтобы его вызывать с помощью команды npm run:
 ```
 _{javascript}_ 
