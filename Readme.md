@@ -29,6 +29,7 @@ nodeserver/index.js
 _{javascript}_ 
 "scripts":{
     "start_server": "node server/index.js"
+    }
 ```
 
 Ответы на вопросы:
