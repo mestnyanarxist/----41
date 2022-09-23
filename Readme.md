@@ -5,8 +5,7 @@
 4) В файле index.js вписан следующий код:
 
 ```
-{javascript} 
-{
+_{javascript}_ 
 //Константы
 const express = require("express");
 const app = express();
@@ -21,18 +20,15 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
     res.send("Hello World!");
 });
-}
 ```
 5) В терминале прописана команда:
 nodeserver/index.js
 6) В браузере вызван URL: https://localhost:3000
 7) В файл package.json добавлен скрипт, чтобы его вызывать с помощью команды npm run:
 ```
-{javascript} 
-{
+_{javascript}_ 
 "scripts":{
     "start_server": "node server/index.js"
-}
 ```
 
 Ответы на вопросы:
