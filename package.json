@@ -4,11 +4,30 @@
     "process": "^0.11.10"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.7",
     "express": "^4.18.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "scripts":{
-    "start_server": "node server/index.js"
-  }
+  "scripts": {
+    "start_server": "node server/index.js",
+    "start_module": "npx parcel module/DashboardLayout/index.html"
+  },
+  "name": "cloudtech-isit-41_novikov",
+  "description": "Описание работы:\r 1) Установлен по гайду express.js: https://expressjs.com/en/starter/installing.html\r 2) Создана папка в server в корне проекта\r 3) В папке server создан файл index.js\r 4) В файле index.js вписан следующий код:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mestnyanarxist/CloudTech-ISiT-41_Novikov.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mestnyanarxist/CloudTech-ISiT-41_Novikov/issues"
+  },
+  "homepage": "https://github.com/mestnyanarxist/CloudTech-ISiT-41_Novikov#readme"
 }
