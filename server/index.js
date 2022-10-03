@@ -17,5 +17,7 @@ app.listen(port, () => {
 app.get("/", (req, res) => {
     //res.send("Hello World!");
     //Функция отправки в сервер файла
-    res.sendFile( `${__dirname}/module/DashboardLayout/index.html`)
-});
+    res.sendFile( `${__dirname}/module/DashboardLayout/index.html`);
+    res.sendFile( `${__dirname}/module/DashboardLayout/MainView.js`);
+    res.sendFile( `${__dirname}/module/DashboardLayout/components/Header/AppBar.js`);
+})

@@ -5,12 +5,16 @@ import Header from './components/Header/AppBar.js';
 import Main from './components/Main/ImageList.js';
 import Footer from './components/Footer/BottomNav.js';
 
-const app = document.getElementById("app");
-ReactDOM.render(<Header />,<Main />,<Footer />, app);
-/*ReactDOM.createRoot(document.querySelector("#app")).render(
+//ReactDOM.render(<App />, document.querySelector('#app'));
+
+const app = document.querySelector("#app");
+//ReactDOM.render(<Header />, app);
+ReactDOM.createRoot(document.querySelector("#app")).render(
 <React.StrictMode>
     <StyledEngineProvider injectFirst>
       <Header />
+      <Main />
+      <Footer />
     </StyledEngineProvider>
   </React.StrictMode>
-);*/
+);
