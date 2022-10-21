@@ -1,5 +1,5 @@
-import Header from '../Header/AppBar';
-import Main from '../Main/Mainb';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
 import Footer from '../Footer/BottomNav';
 import styled from '@emotion/styled';
 
@@ -13,10 +13,10 @@ const Container = styled.div`
       justify-content: space-between;
 `;
 
-export function DashboardLayout({ children }) {
+export function DashboardLayout({ children, header = {} }) {
       return (
             <Container>
-                  <Header />
+                  <Header {...header} />
                   <Main>{children}</Main>
                   <Footer />
             </Container>

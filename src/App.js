@@ -1,33 +1,26 @@
-import { Button } from "@mui/material";
 import { DashboardLayout } from "./components/DashboardLayout/DashboardLayout";
 import MainPage from "./module/MainPage/MainPage";
-import NewsPage from "./module/NewsPage/NewsPage";
+import AuthPage from "./module/AuthPage/AuthPage";
+import { AUTH_PAGE_PATHNAME } from "./constants/urls";
+import { Profile } from "./containers/Profile/Profile";
 
 const Pages = {
     "/": <MainPage />,
-    "news": <NewsPage />,
+    [AUTH_PAGE_PATHNAME]: <AuthPage />,
 }
+
+
 
 export function App() {
 
-    const goToHome = () => {
-        window.location.href = "/"
-    }
-
-    if (window.location.pathname === "/") {
-        return <DashboardLayout>
-            <a href="/news">Нвовости</a>
-            <Button onClick={goToHome} variant="contained">Login</Button>
-            {Pages[window.location.pathname]}
-        </DashboardLayout>
+    const headerParams = {
+        children: <Profile />
     }
 
     return (
-
-        <DashboardLayout>
-            <a href="/news">Нвовости</a>
-            <Button onClick={goToHome} variant="contained">Login</Button>
+        <DashboardLayout header={headerParams}>
             {Pages[window.location.pathname]}
         </DashboardLayout>
     )
+
 }
